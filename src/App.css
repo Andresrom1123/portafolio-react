@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+:root {
+  --spacing: 0.2rem;
+  --clr-primary-5: #d75314;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.banner {
+  background-image: url("../public/banner-images/blue-orange.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.banner h1 {
+  font-size: 3rem;
+}
+.banner h4 {
+  font-size: 0.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.banner .btn {
+  color: var(--clr-primary-5);
+  border-color: var(--clr-primary-5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner .btn-outline-warning:hover {
+  background-color: var(--clr-primary-5);
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+  .banner h4 {
+    font-size: 0.85rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 800px) {
+  .banner h1 {
+    font-size: 4rem;
   }
 }

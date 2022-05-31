@@ -1,6 +1,16 @@
 :root {
   --spacing: 0.2rem;
   --clr-primary-5: #d75314;
+  --clr-primary-1: #9d3402;
+  --transition: all 0.3s linear;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
 }
 
 .underline {
@@ -15,7 +25,7 @@
 }
 
 .banner {
-  background-image: url("../public/banner-images/blue-orange.jpg");
+  background-image: url("../../public/banner-images/blue-orange.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -36,14 +46,6 @@
 .banner .btn-outline-warning:hover {
   background-color: var(--clr-primary-5);
   color: #fff;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
 }
 
 @media (max-width: 992px) {

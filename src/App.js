@@ -1,19 +1,19 @@
-import "./App.css";
+import "./styles/App.css";
 import { social } from "./data";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <div className="banner p-5 d-flex justify-content-center justify-content-md-start align-items-center">
-        <div>
-          <div className="d-flex justify-content-center justify-content-md-start align-items-center">
-            <div>
-              <div className="underline"></div>
-              <h1>I'm Andres</h1>
-              <h4 className="text-white">Web Developer</h4>
-              <div className="btn-group-lg mt-4">
-                <button className="btn btn-outline-warning">Contact me</button>
-              </div>
+      <div className="banner p-5 d-flex flex-column justify-content-between">
+        <Navbar />
+        <div className="">
+          <div>
+            <div className="underline"></div>
+            <h1>I'm Andres</h1>
+            <h4 className="text-white">Web Developer</h4>
+            <div className="btn-group-lg mt-4">
+              <button className="btn btn-outline-warning">Contact me</button>
             </div>
           </div>
           <div className="d-flex mt-4">
@@ -31,6 +31,7 @@ function App() {
             })}
           </div>
         </div>
+        <div></div>
       </div>
     </div>
   );

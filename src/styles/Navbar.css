@@ -1,0 +1,38 @@
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(90deg);
+}
+
+.links-container {
+  height: 0;
+  transition: var(--transition);
+}
+
+.links {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+
+.links a:hover {
+  color: var(--clr-primary-5) !important;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+}

@@ -3,6 +3,7 @@
   --clr-primary-5: #d75314;
   --clr-primary-1: #9d3402;
   --transition: all 0.3s linear;
+  --radius: 0.25rem;
 }
 
 h1,

@@ -1,9 +1,10 @@
 import "../styles/Navbar.css";
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import { links } from "../data";
+import { links } from "../data/icons&navbar";
 
-const Navbar = () => {
+const Navbar = ({ route }) => {
+  console.log(route);
   const [showLinks, setShowLinks] = useState(false);
   const linkscontainerRef = useRef(null);
   const linksRef = useRef(null);
@@ -39,7 +40,9 @@ const Navbar = () => {
             return (
               <li className="list-group" key={id}>
                 <a
-                  className="text-decoration-none text-black pe-4 text-start"
+                  className={`text-decoration-none text-black pe-4 ps-md-2 text-start mb-3 mb-md-0 ${
+                    text === route && "active-btn"
+                  }`}
                   href={url}
                 >
                   {text}

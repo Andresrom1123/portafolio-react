@@ -1,12 +1,13 @@
 import "./styles/App.css";
-import { social } from "./data";
+import { social } from "./data/icons&navbar";
 import Navbar from "./components/Navbar";
+import Experience from "./components/Experience";
 
 function App() {
   return (
-    <div>
-      <div className="banner p-5 d-flex flex-column justify-content-between">
-        <Navbar />
+    <main>
+      <section className="banner p-5 d-flex flex-column justify-content-between">
+        <Navbar route={"home"} />
         <div className="">
           <div>
             <div className="underline"></div>
@@ -32,8 +33,11 @@ function App() {
           </div>
         </div>
         <div></div>
-      </div>
-    </div>
+      </section>
+      <section>
+        <Experience />
+      </section>
+    </main>
   );
 }
 

@@ -1,9 +1,10 @@
 import "./assets/styles/App.css";
-import { social } from "./data/icons&navbar";
 import Navbar from "./components/Navbar";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import { projects } from "./data/experience&projects";
+import Icons from "./components/Icons";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,24 +21,14 @@ function App() {
             </div>
           </div>
           <div className="d-flex mt-4">
-            {social.map((socialIcon) => {
-              const { id, url, icon } = socialIcon;
-              return (
-                <a
-                  key={id}
-                  href={url}
-                  className="me-4 fs-5  bg-black px-2 text-white rounded"
-                >
-                  {icon}
-                </a>
-              );
-            })}
+            <Icons classname="me-4 fs-5  bg-black px-2 text-white rounded" />
           </div>
         </div>
         <div></div>
       </section>
       <Experience />
       <Projects title="projects and practices" projects={projects} />
+      <Footer />
     </main>
   );
 }

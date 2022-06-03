@@ -4,6 +4,11 @@
   --clr-primary-1: #9d3402;
   --transition: all 0.3s linear;
   --radius: 0.25rem;
+  --dar-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  margin-bottom: 4rem;
 }
 
 h1,
@@ -26,7 +31,7 @@ h4 {
 }
 
 .banner {
-  background-image: url("../../public/banner-images/blue-orange.jpg");
+  background-image: url("../images/blue-orange.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;

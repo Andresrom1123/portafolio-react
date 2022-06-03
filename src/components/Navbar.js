@@ -1,10 +1,9 @@
-import "../styles/Navbar.css";
+import "../assets/styles/Navbar.css";
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { links } from "../data/icons&navbar";
 
 const Navbar = ({ route }) => {
-  console.log(route);
   const [showLinks, setShowLinks] = useState(false);
   const linkscontainerRef = useRef(null);
   const linksRef = useRef(null);

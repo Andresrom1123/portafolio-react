@@ -1,7 +1,9 @@
-import "./styles/App.css";
+import "./assets/styles/App.css";
 import { social } from "./data/icons&navbar";
 import Navbar from "./components/Navbar";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import { projects } from "./data/experience&projects";
 
 function App() {
   return (
@@ -34,9 +36,8 @@ function App() {
         </div>
         <div></div>
       </section>
-      <section>
-        <Experience />
-      </section>
+      <Experience />
+      <Projects title="projects and practices" projects={projects} />
     </main>
   );
 }

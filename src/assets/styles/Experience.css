@@ -50,7 +50,7 @@
 }
 
 .active-btn {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-5) !important;
   box-shadow: 0 2px var(--clr-primary-5);
 }
 

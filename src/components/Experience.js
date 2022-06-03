@@ -1,7 +1,8 @@
-import "../styles/Experience.css";
-import React, { useState, useEffect } from "react";
+import "../assets/styles/Experience.css";
+import React, { useState } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
-import { jobs } from "../data/experience";
+import { jobs } from "../data/experience&projects";
+import Title from "./Title";
 
 const Experience = () => {
   const [value, setValue] = useState(0);
@@ -10,10 +11,7 @@ const Experience = () => {
 
   return (
     <section className="section">
-      <div className="title text-center">
-        <h2>Experience</h2>
-        <div className="underline mx-auto"></div>
-      </div>
+      <Title title="experience" />
       <div className="jobs-center">
         {/* btn container */}
         <div className="btn-container d-flex justify-content-center flex-row flex-wrap flex-lg-column justify-content-lg-start">

@@ -1,10 +1,10 @@
 import React from "react";
 
-const Title = ({ title }) => {
+const Title = ({ title, center }) => {
   return (
-    <div className="section-title text-center">
-      <h2>{title || "deaut title"}</h2>
-      <div className="underline mx-auto"></div>
+    <div className={`section-title ${center && "text-center"}`}>
+      <h2>{title || "default title"}</h2>
+      <div className={`underline ${center && "mx-auto"}`}></div>
     </div>
   );
 };

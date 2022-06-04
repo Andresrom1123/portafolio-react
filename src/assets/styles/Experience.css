@@ -44,7 +44,7 @@
 }
 
 .job-btn:hover,
-.list-group a:hover {
+.list-group a span:hover {
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
 }
@@ -92,12 +92,11 @@
     grid-template-columns: 200px 1fr;
     column-gap: 4rem;
   }
-  .job-btn:hover,
-  .list-group a:hover {
+  .job-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
   }
 
-  .active-btn {
+  .btn-container .active-btn {
     box-shadow: -2px 0 var(--clr-primary-5);
   }
 }

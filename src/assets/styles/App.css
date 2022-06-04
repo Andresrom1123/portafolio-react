@@ -45,13 +45,12 @@ h4 {
 }
 
 .banner .btn {
-  color: var(--clr-primary-5);
+  color: #fff;
   border-color: var(--clr-primary-5);
 }
-
-.banner .btn-outline-warning:hover {
+.banner .btn:hover {
+  color: #fff !important;
   background-color: var(--clr-primary-5);
-  color: #fff;
 }
 
 @media (max-width: 992px) {

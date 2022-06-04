@@ -1,9 +1,10 @@
-import "../assets/styles/Navbar.css";
+import "../assets/styles/navbar.css";
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { links } from "../data/icons&navbar";
+import { NavLink } from "react-router-dom";
 
-const Navbar = ({ route }) => {
+const Navbar = ({ active }) => {
   const [showLinks, setShowLinks] = useState(false);
   const linkscontainerRef = useRef(null);
   const linksRef = useRef(null);
@@ -21,7 +22,12 @@ const Navbar = ({ route }) => {
   }, [showLinks]);
 
   return (
-    <nav>
+    <nav
+      className={
+        active &&
+        "d-lg-flex py-3 px-5  bg-light justify-content-center align-items-center"
+      }
+    >
       <div>
         <div className="text-start">
           <button className="nav-toggle mb-2 border-0" onClick={toggleLinks}>
@@ -38,14 +44,16 @@ const Navbar = ({ route }) => {
             const { id, url, text } = link;
             return (
               <li className="list-group" key={id}>
-                <a
-                  className={`text-decoration-none text-black pe-4 ps-md-2 text-start mb-3 mb-md-0 ${
-                    text === route && "active-btn"
-                  }`}
-                  href={url}
+                <NavLink
+                  className={`text-decoration-none text-black pe-4 ps-md-2 text-start mb-3 mb-md-0`}
+                  to={url}
                 >
-                  {text}
-                </a>
+                  {({ isActive }) => (
+                    <span className={isActive ? "active-btn " : undefined}>
+                      {text}
+                    </span>
+                  )}
+                </NavLink>
               </li>
             );
           })}

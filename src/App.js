@@ -1,36 +1,20 @@
-import "./assets/styles/App.css";
-import Navbar from "./components/Navbar";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import { projects } from "./data/experience&projects";
-import Icons from "./components/Icons";
-import Footer from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Layout from "./pages/Layout";
+import Page404 from "./pages/404";
+
+export default function App() {
   return (
-    <main>
-      <section className="banner p-5 d-flex flex-column justify-content-between">
-        <Navbar route={"home"} />
-        <div className="">
-          <div>
-            <div className="underline"></div>
-            <h1>I'm Andres</h1>
-            <h4 className="text-white">Web Developer</h4>
-            <div className="btn-group-lg mt-4">
-              <button className="btn btn-outline-warning">Contact me</button>
-            </div>
-          </div>
-          <div className="d-flex mt-4">
-            <Icons classname="me-4 fs-5  bg-black px-2 text-white rounded" />
-          </div>
-        </div>
-        <div></div>
-      </section>
-      <Experience />
-      <Projects title="projects and practices" projects={projects} />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<Page404 />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

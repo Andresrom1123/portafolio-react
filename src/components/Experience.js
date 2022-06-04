@@ -1,5 +1,6 @@
-import "../assets/styles/Experience.css";
+import "../assets/styles/experience.css";
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { jobs } from "../data/experience&projects";
 import Title from "./Title";
@@ -11,7 +12,7 @@ const Experience = () => {
 
   return (
     <section className="section">
-      <Title title="experience" />
+      <Title title="experience" center />
       <div className="jobs-center">
         {/* btn container */}
         <div className="btn-container d-flex justify-content-center flex-row flex-wrap flex-lg-column justify-content-lg-start">
@@ -42,17 +43,12 @@ const Experience = () => {
           })}
         </article>
       </div>
-      <button
-        type="button"
-        className="btn-job-info mt-3 d-block mx-auto d-block"
+      <NavLink
+        className="text-center text-white text-decoration-none text-uppercase btn-job-info mt-3 d-block mx-auto"
+        to="/about"
       >
-        <a
-          className="text-center text-white text-decoration-none text-uppercase"
-          href="/about"
-        >
-          more info
-        </a>
-      </button>
+        more info
+      </NavLink>
     </section>
   );
 };

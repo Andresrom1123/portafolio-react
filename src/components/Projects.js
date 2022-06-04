@@ -3,9 +3,9 @@ import React from "react";
 import Project from "./Project";
 import Title from "./Title";
 
-const Projects = ({ projects, title }) => {
+const Projects = ({ projects, title, white }) => {
   return (
-    <section className="-section -projects bg-light">
+    <section className={`-section -projects ${!white && "bg-light"}`}>
       <Title center title={title} />
       <div className="-section-center">
         {projects.map((project, index) => {

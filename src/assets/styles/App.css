@@ -74,3 +74,12 @@ Footer
 .footer {
   height: 10rem;
 }
+
+/* 
+===============
+Contact
+==============
+*/
+.btn-contact {
+  background: var(--clr-primary-5);
+}

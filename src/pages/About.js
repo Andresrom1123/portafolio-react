@@ -5,7 +5,7 @@ import ImageMe from "../assets/images/me.webp";
 const About = () => {
   const stack = ["html", "css", "python", "js"];
   return (
-    <section className="p-5 d-flex flex-column flex-lg-row">
+    <section className="px-5 -section d-flex flex-column flex-lg-row">
       <div className="col-12 col-lg-6">
         <img src={ImageMe} alt="about me" style={{ width: "100%" }} />
       </div>

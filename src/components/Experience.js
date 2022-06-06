@@ -1,4 +1,3 @@
-import "../assets/styles/experience.css";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaAngleDoubleRight } from "react-icons/fa";

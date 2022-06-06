@@ -1,4 +1,3 @@
-import "../assets/styles/jobs.css";
 import React from "react";
 import Project from "./Project";
 import Title from "./Title";

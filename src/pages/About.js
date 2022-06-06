@@ -3,7 +3,7 @@ import Title from "../components/Title";
 import ImageMe from "../assets/images/me.webp";
 
 const About = () => {
-  const stack = ["html", "css", "python", "js"];
+  const stack = ["html", "css", "python/django", "js/react"];
   return (
     <section className="px-5 -section d-flex flex-column flex-lg-row">
       <div className="col-12 col-lg-6">
@@ -12,8 +12,9 @@ const About = () => {
       <div className="col-12 col-lg-6">
         <Title title="about me" />
         <p className="mb-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi
-          quia, quos doloremque tenetur ipsam! Aspernatur nemo quo ipsa eligendi
+          My professional goal is to become a backend web developer. I have
+          extensive project experience with Python and Js, specifically using
+          Django and React as a framework.
         </p>
         <div>
           {stack.map((item, index) => {

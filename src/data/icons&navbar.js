@@ -27,17 +27,17 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: "",
+    url: "https://www.linkedin.com/in/andres-romero-069b961a8/",
     icon: <FaLinkedinIn />,
   },
   {
     id: 2,
-    url: "",
+    url: "https://www.hackerrank.com/amclres",
     icon: <FaHackerrank />,
   },
   {
     id: 3,
-    url: "",
+    url: "https://github.com/Andresrom1123",
     icon: <FaGithubSquare />,
   },
 ];

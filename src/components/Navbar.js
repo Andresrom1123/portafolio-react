@@ -1,4 +1,3 @@
-import "../assets/styles/navbar.css";
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { links } from "../data/icons&navbar";

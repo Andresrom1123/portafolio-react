@@ -21,7 +21,7 @@ const About = () => {
             return (
               <span
                 key={index}
-                className="rounded shadow mx-2 p-2 text-uppercase text-muted my-lg-0 d-inline-block"
+                className="rounded shadow m-2 p-2 text-uppercase text-muted my-lg-0 d-inline-block"
               >
                 {item}
               </span>

@@ -12,9 +12,8 @@ const About = () => {
       <div className="col-12 col-lg-6">
         <Title title="about me" />
         <p className="mb-5">
-          My professional goal is to become a backend web developer. I have
-          extensive project experience with Python and Js, specifically using
-          Django and React as a framework.
+          I am a Jr web developer, I took the Full Stack Development course at
+          the academy. I have solid knowledge using Djago and React
         </p>
         <div>
           {stack.map((item, index) => {

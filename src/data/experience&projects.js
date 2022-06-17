@@ -1,5 +1,3 @@
-import React from "react";
-
 export const jobs = [
   {
     id: 1,
@@ -13,11 +11,11 @@ export const projects = [
   {
     id: 1,
     description:
-      "I developed the user-interface and APIs for a newsletter subscription service allowing users to sign-up for newsletters and via their sign-ups vote on newsletter that they would like to see in the future.",
-    github: "#",
-    title: "newsletter",
-    image: "projects-1.jpg",
-    url: "#",
-    stack: ["html", "css"],
+      "Web page, with the functionality of searching and having information about the cryptos in the market, you can log in and add to the watchlist, the cryptos that you like the most",
+    github: "https://github.com/Andresrom1123/crypto",
+    title: "crypto hunter",
+    image: "project-crypto.jpeg",
+    url: "https://andres-romero-crypto.netlify.app/",
+    stack: ["React", "Firebase"],
   },
 ];

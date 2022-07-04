@@ -341,7 +341,7 @@ Job
 
 @media screen and (min-width: 992px) {
   .-project-shadow {
-    box-shadow: 0;
+    box-shadow: 0 0 0;
   }
   .-section-center {
     width: 95vw;

@@ -3,7 +3,10 @@ export const jobs = [
     id: 1,
     company: "spacelab mx",
     dates: "September 2021 - Febraury 2022",
-    duties: ["Docker", "NodeJs"],
+    duties: [
+      "I trained with technologies such as NodeJs, FastApi, Docker, learning the basics in 1 week;",
+      "I learned the organization of tasks for a large project between 2 people."
+    ],
     title: "back-end developer",
   },
 ];
@@ -27,5 +30,14 @@ export const projects = [
     image: "project-weather.avif",
     url: "https://andres-romero-weather-app.netlify.app/",
     stack: ["React"],
+  },
+  {
+    id: 3,
+    description: "Newsletter CRUD using celery for sendign emails.",
+    github: "https://github.com/Andresrom1123/newsletters_backend",
+    title: "newsletter api",
+    image: "django-celery.png",
+    url: "https://github.com/Andresrom1123/newsletters_backend",
+    stack: ["Django"],
   },
 ];

@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import AboutComponent from "../components/About";
+import Title from "../components/Title";
 import { projects } from "../data/experience&projects";
 import Icons from "../components/Icons";
 import Footer from "../components/Footer";
@@ -27,6 +29,12 @@ const Home = () => {
           </div>
         </div>
         <div></div>
+      </section>
+      <section className="-section bg-light">
+        <div className='-section-center'>
+          <Title title="About me" center />
+          <AboutComponent />
+        </div>
       </section>
       <Experience />
       <Projects title="projects and practices" projects={projects} />

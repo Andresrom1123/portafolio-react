@@ -29,7 +29,7 @@ const ContactPage = () => {
       ...data,
     };
     try {
-      const result = await axios.post(formSparkUrl, payload);
+      await axios.post(formSparkUrl, payload);
       showAlert(true, "alert-success", "Thanks for the message!");
       setLoading(false);
     } catch (error) {
